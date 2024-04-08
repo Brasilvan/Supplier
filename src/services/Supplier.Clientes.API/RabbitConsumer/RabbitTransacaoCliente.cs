@@ -62,6 +62,7 @@ namespace Supplier.Clientes.API.RabbitConsumer
             return Task.CompletedTask;
         }
 
+
         public void NotificarCliente(TransacaoCliente transacao)
         {
             using (var scope = _serviceProvider.CreateScope())
