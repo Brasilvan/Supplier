@@ -1,0 +1,6 @@
+@Supplier.Autenticacao.API_HostAddress = https://localhost:7109
+
+GET {{Supplier.Autenticacao.API_HostAddress}}/api/autenticacao/
+Accept: application/json
+
+###

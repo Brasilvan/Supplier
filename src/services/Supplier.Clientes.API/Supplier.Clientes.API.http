@@ -1,0 +1,6 @@
+@Supplier.Clientes.API_HostAddress = https://localhost:7217
+
+GET {{Supplier.Clientes.API_HostAddress}}/
+Accept: application/json
+
+###

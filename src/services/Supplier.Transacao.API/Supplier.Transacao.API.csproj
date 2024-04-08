@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<InvariantGlobalization>false</InvariantGlobalization>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Controllers\TransacaoController.cs~RFb3e2b8.TMP" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="automapper" Version="12.0.1" />
+		<PackageReference Include="automapper.extensions.microsoft.dependencyinjection" Version="12.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\business\Supplier.Business\Supplier.Business.csproj" />
+	  <ProjectReference Include="..\..\core\Supplier.Core\Supplier.Core.csproj" />
+	  <ProjectReference Include="..\..\data\Supplier.Data\Supplier.Data.csproj" />
+	</ItemGroup>
+
+</Project>
